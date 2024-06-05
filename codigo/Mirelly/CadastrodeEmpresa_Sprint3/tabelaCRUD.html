@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="styleCRUD.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <button onclick="goBack()" id="back"><i class='bx bx-arrow-back'></i> Voltar</button>
+      <span>Cadastro de Empresas</span>
+      <button onclick="openModal()" id="new">Incluir</button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>CNPJ</th>
+            <th>Senha</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form id="formCadastro">
+          <input type="hidden" id="m-id" />
+          <label for="m-nome">Nome</label>
+          <input id="m-nome" type="text" required />
+
+          <label for="m-email">Email</label>
+          <input id="m-email" type="email" required />
+
+          <label for="m-telefone">Telefone</label>
+          <input id="m-telefone" type="text" required />
+
+          <label for="m-cnpj">CNPJ</label>
+          <input id="m-cnpj" type="text" required />
+
+          <label for="m-senha">Senha</label>
+          <input id="m-senha" type="password" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="scriptCRUD.js"></script>
+</body>
+
+</html>

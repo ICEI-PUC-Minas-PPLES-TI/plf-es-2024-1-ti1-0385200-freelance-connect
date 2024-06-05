@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de cliente</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="body">
+
+  <header class="py-3 border-b-2 sticky fixed top-0 bg-white">
+    <div class="mx-auto flex items-center justify-between max-w-screen-lg">
+      <h1>Connect Tech</h1>
+
+      <nav class="md:flex items-center gap-3 hidden">
+        <ul class="flex items-center gap-4">
+          <li><a href="" class="link">Encontrar um trabalho</a></li>
+          <li><a href="" class="link">Talentos</a></li>
+          <li><a href="" class="link">Features</a></li>
+          <li><a href="" class="link">Sobre</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <button style="color: #2349c7; text-decoration: none">
+            Login
+          </button>
+          <button class="button">Register</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-1 gap-4 lg:grid-cols-[120px_1fr] lg:gap-2">
+    <div class="h-32">
+      <!-- Sidebar fixo -->
+      <div class="fixed h-full w-16 flex flex-col justify-between border-e bg-white">
+        <div>
+          <div class="inline-flex size-16 items-center justify-center">
+            <span class="grid size-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
+              L
+            </span>
+          </div>
+          <div class="border-t border-gray-100">
+            <div class="px-2">
+              <div class="py-4">
+                <a href="#" class="t group relative flex justify-center rounded bg-blue-50 px-2 py-1.5 text-blue-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span
+                    class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">General</span>
+                </a>
+              </div>
+              <ul class="space-y-1 border-t border-gray-100 pt-4">
+                <li>
+                  <a href="#"
+                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span
+                      class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">Teams</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                    </svg>
+                    <span
+                      class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">Billing</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    <span
+                      class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">Invoices</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <span
+                      class="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">Account</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-white p-2">
+          <form action="#">
+            <button type="submit"
+              class="group relative flex w-full justify-center rounded-lg bg-blue-50 px-2 py-1.5 text-sm text-blue-700 hover:bg-blue-100">
+              <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7" />
+              </svg>
+              <span class="absolute inset-y-0 end-full mr-4 flex items-center pr-3">
+                <svg class="h-5 w-5 text-blue-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3a1 1 0 001 1h2a1 1 0 100-2h-1V7z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              Sair
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="h-32 rounded-lg">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+        <!-- Imagem -->
+        <div class="h-32 rounded-lg" style="position: relative; margin-top: 4rem; overflow: hidden; height: 400px; width: 320px;">
+          <a href="#" class="block">
+            <img alt="" id="fotoPerfil" src="./img/unnamed.png"
+              class="fixed-size-img h-64 w-95 object-cover sm:h-80 lg:h-70 mt-3 rounded-lg" style="border-radius: 2.5rem;" />
+
+              <div class="botoes" style="display: flex; flex-direction: row; gap: 1rem;">
+                <button id="editarFoto" type="button" style="width: 3rem; margin-left: 3rem; margin-top: 1.2rem; border-color: black; border-width: 0.1rem; font-size: medium; display: flex; justify-content: center; align-items: center;"
+                  class="inline-block shrink-0 rounded-md px-12 py-3 text-sm font-medium transition focus:outline-none focus:ring custom-button">
+             Editar
+                </button>
+              
+                <button id="removerFoto" type="button" style="width: 3rem; margin-top: 1.2rem; border-color: black; border-width: 0.1rem; font-size: medium; display: flex; justify-content: center; align-items: center;"
+                  class="inline-block shrink-0 rounded-md px-12 py-3 text-sm font-medium transition focus:outline-none focus:ring custom-button">
+               Remover
+                </button>
+              </div>
+              
+
+
+
+          </a>
+        </div>
+        <!-- Form -->
+        <div class="h-32 rounded-lg lg:col-span-2">
+          <main
+            class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6 main-content">
+            <div class="max-w-xl lg:max-w-3xl">
+              <a class="block text-blue-600" href="#">
+                <span class="sr-only">Home</span>
+              </a>
+
+              <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+                Editar Perfil
+              </h1>
+
+              <form id="formCadastro" class="mt-8 grid grid-cols-6 gap-6">
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="NomeCliente" class="block text-sm font-medium text-gray-700">
+                    Nome
+                  </label>
+
+                  <input type="text" id="NomeCliente" name="first_name"
+                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm input-lg" />
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="TelefoneCliente" class="block text-sm font-medium text-gray-700">
+                    Telefone
+                  </label>
+
+                  <input type="text" id="TelefoneCliente" name="Telefone"
+                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm input-lg" />
+                </div>
+
+                <div class="col-span-6">
+                  <label for="EmailCliente" class="block text-sm font-medium text-gray-700"> Email </label>
+
+                  <input type="email" id="EmailCliente" name="email"
+                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm input-lg" />
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="SenhaCliente" class="block text-sm font-medium text-gray-700"> Senha </label>
+
+                  <input type="password" id="SenhaCliente" name="password"
+                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm input-lg" />
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="PasswordConfirmation" class="block text-sm font-medium text-gray-700">
+                    Confirmar senha
+                  </label>
+
+                  <input type="password" id="PasswordConfirmation" name="password_confirmation"
+                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm input-lg" />
+                </div>
+
+                <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+                  <button type="button" onclick="validarCadastro()"
+                    class="inline-block shrink-0 rounded-md px-12 py-3 text-sm font-medium transition focus:outline-none focus:ring custom-button">
+                    Confirmar
+                  </button>
+                </div>
+              </form>
+              <div id="msg"></div> <!-- Adiciona essa div para mensagens -->
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

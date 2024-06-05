@@ -1,0 +1,9 @@
+link da minha API do JSON SERVER:
+https://replit.com/@mirellypego/JSONServerDIW
+
+depois de acessar esse link e dar 'RUN' no projeto, você deve pegar o link que o replit disponibiliza
+e troca-lo na const apiURL, apenas deixando o final /clientes
+(é necessário fazer isso no arquivo no scriptCadastro.js e no arquivo scriptCRUD.js)
+
+
+
