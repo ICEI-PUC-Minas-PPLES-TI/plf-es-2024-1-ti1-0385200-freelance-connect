@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados das Empresas</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="body">
+
+  <header class="py-3 border-b-2 sticky fixed top-0 bg-white">
+    <div class="mx-auto flex items-center justify-between max-w-screen-lg">
+      <h1>Connect Tech</h1>
+    </div>
+  </header>
+
+  <div class="container mx-auto mt-8 px-4">
+    <h2 class="text-2xl font-bold mb-4">Dados das Empresas</h2>
+    <table class="table-auto w-full">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Nome</th>
+          <th class="px-4 py-2">Telefone</th>
+          <th class="px-4 py-2">Email</th>
+          <th class="px-4 py-2">CNPJ</th>
+          <th class="px-4 py-2">Senha</th>
+          <th class="px-4 py-2">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="clientData"></tbody>
+    </table>
+
+    <h2 class="text-2xl font-bold mb-4 mt-8">Adicionar Empresa</h2>
+    <form id="formAdicionarCliente">
+      <div class="mb-4">
+        <label for="novoNome" class="block text-sm font-medium text-gray-700">Nome</label>
+        <input type="text" id="novoNome"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+      </div>
+      <div class="mb-4">
+        <label for="novoTelefone" class="block text-sm font-medium text-gray-700">Telefone</label>
+        <input type="text" id="novoTelefone"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+      </div>
+      <div class="mb-4">
+        <label for="novoEmail" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="novoEmail"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+      </div>
+      <div class="mb-4">
+        <label for="novoCNPJ" class="block text-sm font-medium text-gray-700">CNPJ</label>
+        <input type="text" id="novoCNPJ"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+      </div>
+      <div class="mb-4">
+        <label for="novaSenha" class="block text-sm font-medium text-gray-700">Senha</label>
+        <input type="password" id="novaSenha"
+          class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+      </div>
+      <button type="button" onclick="incluirCliente()"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Adicionar</button>
+    </form>
+
+    <button onclick="voltar()"
+      class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Voltar</button>
+  </div>
+
+  <script src="./scriptDadosEmpresas.js"></script>
+</body>
+
+</html>
