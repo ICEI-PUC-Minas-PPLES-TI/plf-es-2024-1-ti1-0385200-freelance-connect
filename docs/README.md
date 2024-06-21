@@ -78,19 +78,45 @@ Requisitos não funcionais (correspondem a uma característica técnica, seja de
 •  O sistema será desenvolvido sendo responsivo em Firefox, Microsoft Edge e Chrome;
 •  O sistema será desenvolvido pra ser responsivo em outros dispositivos.
 
-3	PROJETO DE INTERFACE
+3	PROJETO DA SOLUÇÃO
 
-3.1	Fluxo do usuário
- ![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/0ae61fd0-5f20-40a6-aa12-a94de4e2116e)
+3.1 Requisitos
 
-3.2	Wireframes
+- Cadastro de Cliente;
+- Cadastro de Empresa;
+- Login;
+- Header;
+- Footer;
+- Configurações;
+- Modo escuro/claro;
+- Perfil de usuário;
+- Perfil da empresa;
+- Editar Perfil do Usuário / Empresa;
+- Excluir perfil usuário/empresa;
+- Página da empresa;
+  - Criar oferta (página da empresa);
+  - Exibir cards das ofertas (página da empresa);
+  - Excluir oferta (página da empresa);
+  - Editar oferta (página da empresa);
+  - Visualização dos candidatos à vaga (página da empresa);
+- Página do usuário;
+  - Exibir vagas (página do usuário);
+  - Candidatar à vaga (página do usuário);
+- Avaliação do perfil da empresa.
 
-![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/d591c3c8-6147-4917-a79a-d8f2d1942634)
+3.2 Projeto de interface
 
- 
-3.3	Protótipo Interativo [LINK]
+3.2.1 Wireframes
 
-https://www.figma.com/proto/nMWNippnxVA2i7tkJpczjD/Wireframe-TIAW?page-id=0%3A1&type=design&node-id=4-60&viewport=515%2C679%2C0.13&t=54EJ2By1596Srvyd-1&scaling=min-zoom&starting-point-node-id=4%3A60&mode=design
+3.2.2 Protótipo
+
+3.3 Tecnologias
+
+Para a realização do software, utilizamos diversas ferramentas tecnológicas essenciais. Utilizamos o Discord para realizar reuniões frequentes, garantindo uma comunicação eficiente entre todos os membros da equipe. O WhatsApp foi fundamental para alinhamentos ágeis e adaptações rápidas às mudanças necessárias, além de servir como plataforma para organização das funções de cada integrante.
+No desenvolvimento, contamos com o Visual Studio para a codificação do software, utilizando suas ferramentas de desenvolvimento integradas. Para hospedagem do JSON e garantir acesso simultâneo e colaborativo, optamos pelo Replit, proporcionando um ambiente acessível e compartilhado.
+Para o gerenciamento do código-fonte, utilizamos o GitHub, onde hospedamos nosso repositório para que todos os membros do grupo pudessem colaborar e ter acesso ao código criado por cada um. A plataforma GitHub Projects foi essencial para organizar as funcionalidades atribuídas a cada integrante, além de manter um controle claro do que estava pendente, em andamento e concluído durante todo o processo de desenvolvimento.
+Essas tecnologias foram fundamentais para o sucesso do projeto, garantindo uma colaboração eficiente, organização estruturada e um desenvolvimento contínuo e integrado.
+
 
 4	METODOLOGIA
 
