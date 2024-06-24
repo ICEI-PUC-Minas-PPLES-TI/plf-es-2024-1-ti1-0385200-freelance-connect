@@ -42,14 +42,14 @@ Estudantes de Tecnologia da Informação com idades entre 17 e 30 anos. Que busc
 Profissionais de Tecnologia da Informação em busca de oportunidades adicionais de renda por meio de projetos de curto prazo. Essa oportunidade é acessível tanto para residentes urbanos quanto para aqueles que vivem em áreas rurais ou do interior.
 Indivíduos, pequenas empresas ou organizações com até 50 colaboradores, que buscam solucionar desafios por meio da tecnologia, porém preferem evitar os custos vinculados à contratação de grandes corporações para tal serviço, devido a restrições orçamentárias. Valorizam a agilidade e almejam soluções menos burocráticas para suas necessidades.
 
-2	ESPECIFICAÇÃO DO PROJETO
+1.7 Artefatos de Design Thinking
+
+2	PROJETO DA SOLUÇÃO
 
 2.1	Personas
 
 Gabriel, 19 anos, brasileiro, reside em Belo Horizonte. Ele é um estudante universitário de Tecnologia da Informação, atualmente no terceiro semestre na Pontifícia Universidade Católica de Minas Gerais. Enquanto progride em seus estudos, Gabriel está buscando oportunidades de trabalho freelance na área de T.I. para gerar uma fonte de renda e obter experiência prática. Embora não tenha histórico profissional anterior, ele está determinado a construir um portfólio sólido durante seus anos universitários, preparando-se para futuras oportunidades no mercado de trabalho. A flexibilidade oferecida pelo trabalho freelancer é particularmente valiosa para Gabriel, pois isso lhe permite equilibrar eficientemente seus estudos com suas responsabilidades profissionais. Além disso, essa flexibilidade também lhe concede mais tempo para se dedicar a escrever músicas, o qual é seu hobby preferido.
-
 Felipe, 35 anos, brasileiro, reside no interior de Minas Gerais, na cidade de Monte Verde. Ele é formado em Sistemas de Informação e atualmente trabalha como front-end em uma empresa. No entanto, ele busca uma renda adicional para garantir mais estabilidade financeira e melhorar a qualidade de vida de sua família. Com um filho para cuidar, Felipe valoriza muito o tempo em família. Além disso, ele também deseja ter mais tempo para se dedicar ao seu hobby, que é jogar. Por isso, ele prefere buscar oportunidades de renda extra por meio de freelancer, visto que se tratam de projetos de curto prazo.
-
 Ester, 39 anos, brasileira, reside em Belo Horizonte. Seu hobby preferido é criar novas receitas, inspirada pelos momentos que compartilhava com sua avó. Após estudar culinária e trabalhar em diversas confeitarias, decidiu abrir sua própria loja, porém, ela enfrenta um desafio: lidar com a alta demanda de pedidos recebidos via WhatsApp e telefone. Essa demanda excessiva tem consumido grande parte do seu tempo, impedindo-a de atender a todos os clientes e de criar novas receitas. Portanto, Ester está em busca de um software de pedidos online. Contudo, ela está enfrentando um obstáculo financeiro, e não consegue contratar uma empresa de desenvolvimento de software. Por isso, ela está procurando um profissional capaz de desenvolver esse software rapidamente e por um custo que se adeque ao seu orçamento. Entretanto, ela não tem conhecimento sobre onde encontrar esse profissional.
 
 2.2	Histórias de Usuários
@@ -63,87 +63,73 @@ Como usuário, desejo poder criar um perfil na plataforma, fornecendo informaç�
 
 2.3	Requisitos
 
-Requisitos funcionais (correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário):
-• Landing Page (cadastro de usuário);
-• Cliente – Tela de ofertas;
-• Perfil do usuário;
-• Post de ofertas;
-• Ver mais (sobre a empresa e ofertas);
-•  Ofertante – Tela de Cadastro e Ofertas em aberto;
-•  Tela de Configurações.
+•	Cadastro de Cliente;
 
-Requisitos não funcionais (correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos IOS e Android)):
-•  O sistema será desenvolvido usando HTML, CSS e JavaScript;
-•  O sistema será desenvolvido usando Banco de Dados – LocalStorage;
-•  O sistema será desenvolvido sendo responsivo em Firefox, Microsoft Edge e Chrome;
-•  O sistema será desenvolvido pra ser responsivo em outros dispositivos.
+•	Cadastro de Empresa;
 
-3	PROJETO DA SOLUÇÃO
+•	Login;
 
-3.1 Requisitos
+•	Header;
 
-- Cadastro de Cliente;
-- Cadastro de Empresa;
-- Login;
-- Header;
-- Footer;
-- Configurações;
-- Modo escuro/claro;
-- Perfil de usuário;
-- Perfil da empresa;
-- Editar Perfil do Usuário / Empresa;
-- Excluir perfil usuário/empresa;
-- Página da empresa;
-  - Criar oferta (página da empresa);
-  - Exibir cards das ofertas (página da empresa);
-  - Excluir oferta (página da empresa);
-  - Editar oferta (página da empresa);
-  - Visualização dos candidatos à vaga (página da empresa);
-- Página do usuário;
-  - Exibir vagas (página do usuário);
-  - Candidatar à vaga (página do usuário);
-- Avaliação do perfil da empresa.
+•	Footer;
 
-3.2 Projeto de interface
+•	Configurações;
 
-3.2.1 Wireframes
+•	Modo escuro/claro;
 
-3.2.2 Protótipo
+•	Perfil de usuário;
 
-3.3 Tecnologias
+•	Perfil da empresa;
 
-Para a realização do software, utilizamos diversas ferramentas tecnológicas essenciais. Utilizamos o Discord para realizar reuniões frequentes, garantindo uma comunicação eficiente entre todos os membros da equipe. O WhatsApp foi fundamental para alinhamentos ágeis e adaptações rápidas às mudanças necessárias, além de servir como plataforma para organização das funções de cada integrante.
-No desenvolvimento, contamos com o Visual Studio para a codificação do software, utilizando suas ferramentas de desenvolvimento integradas. Para hospedagem do JSON e garantir acesso simultâneo e colaborativo, optamos pelo Replit, proporcionando um ambiente acessível e compartilhado.
-Para o gerenciamento do código-fonte, utilizamos o GitHub, onde hospedamos nosso repositório para que todos os membros do grupo pudessem colaborar e ter acesso ao código criado por cada um. A plataforma GitHub Projects foi essencial para organizar as funcionalidades atribuídas a cada integrante, além de manter um controle claro do que estava pendente, em andamento e concluído durante todo o processo de desenvolvimento.
-Essas tecnologias foram fundamentais para o sucesso do projeto, garantindo uma colaboração eficiente, organização estruturada e um desenvolvimento contínuo e integrado.
+•	Editar Perfil do Usuário / Empresa;
 
+•	Excluir perfil usuário/empresa;
 
-4	METODOLOGIA
+•	Página da empresa;
 
-4.1	Ferramentas
+•	Criar oferta (página da empresa);
 
-As ferramentas utilizadas na Sprint 1 desse projeto foram:
-• WhatsApp: Usado para a comunicação. 
-• Trello:  Usado para a organização. 
-• Figma:  Usado para a criação de interfaces, wireframes e protótipos. 
-• GitHub: Usado para implantar o código e o repositório.
+•	Exibir cards das ofertas (página da empresa);
 
-4.2	Organização da equipe e divisão de papéis
+•	Excluir oferta (página da empresa);
 
-A equipe realizou sua organização e divisão de papéis, da seguinte forma:
-• Introdução, Problema, Objetivo do projeto, Formatação do documento - Mirelly;
-• Personas, Histórias de Usuários, Público-Alvo - Jheni;
-• Fluxo do usuário - Pedro;
-• Wireframes das telas, Protótipo Interativo [LINK] - Igor e Pedro;
-• Metodologia e Artefatos do Processo de Design Thinking - Rafael;
-• Slides, Justificativa - Ruan.
+•	Editar oferta (página da empresa);
 
-4.3	Quadro de controle de tarefas – Kanban
+•	Visualização dos candidatos à vaga (página da empresa);
 
-![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/587d33c4-041d-4b7f-be37-c07df9743244)
+•	Página do usuário;
+
+•	Exibir vagas (página do usuário);
+
+•	Candidatar à vaga (página do usuário);
+
+•	Avaliação do perfil da empresa.
+
+2.4	Projeto de Interface
+
+2.4.1 Wireframes
+
+2.4.2 Protótipos
+
+2.5	Tecnologias
+
+Para a realização do software, utilizamos diversas ferramentas tecnológicas essenciais. Utilizamos o Discord para realizar reuniões frequentes, garantindo uma comunicação eficiente entre todos os membros da equipe. O WhatsApp foi fundamental para alinhamentos ágeis e adaptações rápidas às mudanças necessárias, além de servir como plataforma para organização das funções de cada integrante. No desenvolvimento, contamos com o Visual Studio para a codificação do software, utilizando suas ferramentas de desenvolvimento integradas. Para hospedagem do JSON e garantir acesso simultâneo e colaborativo, optamos pelo Replit, proporcionando um ambiente acessível e compartilhado. 
+
+Para o gerenciamento do código-fonte, utilizamos o GitHub, onde hospedamos nosso repositório para que todos os membros do grupo pudessem colaborar e ter acesso ao código criado por cada um. A plataforma GitHub Projects foi essencial para organizar as funcionalidades atribuídas a cada integrante, além de manter um controle claro do que estava pendente, em andamento e concluído durante todo o processo de desenvolvimento. Essas tecnologias foram fundamentais para o sucesso do projeto, garantindo uma colaboração eficiente, organização estruturada e um desenvolvimento contínuo e integrado.
+
+3	METODOLOGIA DE TRABALHO
+
+3.1	Processo
+
+3.2	Atribuições
+
+3.3	Ferramentas
+
+4	SOLUÇÃO IMPLEMENTADA
+
+4.1	Funcionalidades do software
 
 5	REFERÊNCIAS BIBLIOGRÁFICAS
-
 BLOG, Hotmart. O que é persona no marketing? Saiba mais e descubra como fazer a sua. Disponível em: https://hotmart.com/pt-br/blog/o-que-e-persona. Acesso em: 09 abr. 2024. 
 
 BLOG, Hotmart. Público-alvo: conceito e dicas para definir o seu. Disponível em: https://hotmart.com/pt-br/blog/publico-alvo. Acesso em: 09 abr. 2024.
@@ -151,3 +137,4 @@ BLOG, Hotmart. Público-alvo: conceito e dicas para definir o seu. Disponível e
 EDITORA, Atena. Como elaborar objetivos gerais e específicos. Disponível em: https://www.atenaeditora.com.br/blog/como-elaborar-objetivos-gerais-e-especificos. Acesso em: 09 abr. 2024.
 
 MEDIUM. Objetivos, Problema de pesquisa e justificativa. Disponível em: https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3. Acesso em: 09 abr. 2024.
+
