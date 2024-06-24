@@ -49,16 +49,23 @@ Indivíduos, pequenas empresas ou organizações com até 50 colaboradores, que 
 2.1	Personas
 
 Gabriel, 19 anos, brasileiro, reside em Belo Horizonte. Ele é um estudante universitário de Tecnologia da Informação, atualmente no terceiro semestre na Pontifícia Universidade Católica de Minas Gerais. Enquanto progride em seus estudos, Gabriel está buscando oportunidades de trabalho freelance na área de T.I. para gerar uma fonte de renda e obter experiência prática. Embora não tenha histórico profissional anterior, ele está determinado a construir um portfólio sólido durante seus anos universitários, preparando-se para futuras oportunidades no mercado de trabalho. A flexibilidade oferecida pelo trabalho freelancer é particularmente valiosa para Gabriel, pois isso lhe permite equilibrar eficientemente seus estudos com suas responsabilidades profissionais. Além disso, essa flexibilidade também lhe concede mais tempo para se dedicar a escrever músicas, o qual é seu hobby preferido.
+
 Felipe, 35 anos, brasileiro, reside no interior de Minas Gerais, na cidade de Monte Verde. Ele é formado em Sistemas de Informação e atualmente trabalha como front-end em uma empresa. No entanto, ele busca uma renda adicional para garantir mais estabilidade financeira e melhorar a qualidade de vida de sua família. Com um filho para cuidar, Felipe valoriza muito o tempo em família. Além disso, ele também deseja ter mais tempo para se dedicar ao seu hobby, que é jogar. Por isso, ele prefere buscar oportunidades de renda extra por meio de freelancer, visto que se tratam de projetos de curto prazo.
+
 Ester, 39 anos, brasileira, reside em Belo Horizonte. Seu hobby preferido é criar novas receitas, inspirada pelos momentos que compartilhava com sua avó. Após estudar culinária e trabalhar em diversas confeitarias, decidiu abrir sua própria loja, porém, ela enfrenta um desafio: lidar com a alta demanda de pedidos recebidos via WhatsApp e telefone. Essa demanda excessiva tem consumido grande parte do seu tempo, impedindo-a de atender a todos os clientes e de criar novas receitas. Portanto, Ester está em busca de um software de pedidos online. Contudo, ela está enfrentando um obstáculo financeiro, e não consegue contratar uma empresa de desenvolvimento de software. Por isso, ela está procurando um profissional capaz de desenvolver esse software rapidamente e por um custo que se adeque ao seu orçamento. Entretanto, ela não tem conhecimento sobre onde encontrar esse profissional.
 
 2.2	Histórias de Usuários
 
 Como estudante de Tecnologia da Informação e desempregado, desejo acessar uma plataforma que me permita encontrar oportunidades de trabalho freelancer que se encaixem na minha agenda de estudos e me proporcionem experiência na área. 
+
 Critérios de aceitação:
+
 Como usuário, desejo que a plataforma me permita cadastrar um perfil que inclua informações sobre minha formação acadêmica, habilidades técnicas e disponibilidade de horários de trabalho. Além disso, é importante poder visualizar uma lista de oportunidades de trabalho freelancer disponíveis. E que as oportunidades de trabalho exibam informações detalhadas, incluindo o escopo do projeto, requisitos técnicos e a remuneração oferecida e poder candidatar-me a oportunidades de trabalho diretamente através da plataforma e ter acesso aos contatos do contratante para enviar uma mensagem.
+
 Como pequena empresa viso solucionar desafios por meio da tecnologia sem comprometer o orçamento e sem burocracia, sendo assim desejo acessar uma plataforma que me conecte a profissionais qualificados e soluções eficientes, valorizando a agilidade e a praticidade no processo.
+
 Critérios de Aceitação:
+
 Como usuário, desejo poder criar um perfil na plataforma, fornecendo informações sobre mim, minha empresa ou organização. Além disso, desejo poder cadastrar minhas necessidades e receber propostas via e-mail de indivíduos interessados em realizar o trabalho. Também desejo ter acesso ao perfil desses usuários, contendo informações sobre suas experiências, trabalhos já realizados e habilidades.
 
 2.3	Requisitos
