@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Tech | Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <a href="index.html" class="absolute top-3 left-3">Voltar</a>
+    <div class="flex items-center justify-center min-h-screen">
+      <div
+        class="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg border border-gray-400"
+      >
+        <div class="flex justify-center mx-auto">
+          <img
+            class="w-auto h-10 sm:h-10"
+            src="./assets/imgs/logo-freela-connect.png"
+            alt=""
+          />
+        </div>
+
+        <form class="mt-6" id="formLogin" method="post">
+          <div>
+            <label for="email" class="block text-sm text-gray-800">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            />
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <label for="password" class="block text-sm text-gray-800"
+                >Password</label
+              >
+              <!-- <a href="#" class="text-xs text-gray-600 hover:underline"
+                >Forget Password?</a
+              > -->
+            </div>
+
+            <input
+              type="password"
+              id="password"
+              class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            />
+          </div>
+
+          <div class="mt-6">
+            <button
+              class="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50 bg-blue-600"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+
+        <p class="mt-8 text-xs font-light text-center text-gray-400">
+          Não possui uma conta?
+          <a
+            href="./register.html"
+            class="font-medium text-gray-700 hover:underline"
+            >Criar agora!</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+    <script>
+      async function processaFormLogin(ev) {
+        ev.preventDefault();
+
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        const resultadoLogin = await loginUser(email, password);
+        if (resultadoLogin) {
+          setTimeout(() => {
+            console.log("resultadoLogin", resultadoLogin);
+          }, 5000);
+          window.location.href = "ofertas.html";
+        } else {
+          alert("Usuario ou senha incorretos");
+        }
+      }
+
+      document
+        .getElementById("formLogin")
+        .addEventListener("submit", processaFormLogin);
+    </script>
+  </body>
+</html>

@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerenciamento de Oportunidades</title>
-    <link rel="stylesheet" href="./assets/styles/ofertas.css">
-</head>
+    <link rel="stylesheet" href="../style/ofertas.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-        <h1>Oportunidades</h1>
-        <button id="novaOportunidadeBtn">Nova Oportunidade</button>
-        <div id="cardsContainer" class="cards-container"></div>
+      <h1>Oportunidades</h1>
+      <button id="novaOportunidadeBtn">Nova Oportunidade</button>
+      <div id="cardsContainer" class="cards-container"></div>
     </div>
 
     <!-- Modal Nova Oportunidade -->
     <div id="novaOportunidadeModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Nova Oportunidade</h2>
-            <form id="novaOportunidadeForm">
-                <label for="title">Título:</label><br>
-                <input type="text" id="title" name="title"><br>
-                <label for="tags">Tags:</label><br>
-                <select id="tags" name="tags">
-                    <option value="hibrido">Híbrido</option>
-                    <option value="presencial">Presencial</option>
-                    <option value="online">Online</option>
-                </select><br>
-                <input type="text" id="tags" name="tags"><br>
-                <label for="company">Empresa:</label><br>
-                <input type="text" id="company" name="company"><br>
-                <label for="companyLogo">Logo da Empresa (URL):</label><br>
-                <input type="text" id="companyLogo" name="companyLogo"><br>
-                <label for="valueMin">Valor Mínimo:</label><br>
-                <input type="number" id="valueMin" name="valueMin"><br>
-                <label for="valueMax">Valor Máximo:</label><br>
-                <input type="number" id="valueMax" name="valueMax"><br><br>
-                <input type="submit" value="Salvar">
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Nova Oportunidade</h2>
+        <form id="novaOportunidadeForm">
+          <label for="title">Título:</label><br />
+          <input type="text" id="title" name="title" /><br />
+          <label for="tags">Tags:</label><br />
+          <select id="tags" name="tags">
+            <option value="hibrido">Híbrido</option>
+            <option value="presencial">Presencial</option>
+            <option value="online">Online</option></select
+          ><br />
+          <input type="text" id="tags" name="tags" /><br />
+          <label for="company">Empresa:</label><br />
+          <input type="text" id="company" name="company" /><br />
+          <label for="companyLogo">Logo da Empresa (URL):</label><br />
+          <input type="text" id="companyLogo" name="companyLogo" /><br />
+          <label for="valueMin">Valor Mínimo:</label><br />
+          <input type="number" id="valueMin" name="valueMin" /><br />
+          <label for="valueMax">Valor Máximo:</label><br />
+          <input type="number" id="valueMax" name="valueMax" /><br /><br />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
     </div>
 
     <!-- Modal Editar Oportunidade -->
     <div id="editarOportunidadeModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Editar Oportunidade</h2>
-            <form id="editarOportunidadeForm">
-                <input type="hidden" id="editId">
-                <label for="editTitle">Título:</label><br>
-                <input type="text" id="editTitle" name="editTitle"><br>
-                <label for="editTags">Tags (separadas por vírgula):</label><br>
-                <input type="text" id="editTags" name="editTags"><br>
-                <label for="editCompany">Empresa:</label><br>
-                <input type="text" id="editCompany" name="editCompany"><br>
-                <label for="editCompanyLogo">Logo da Empresa (URL):</label><br>
-                <input type="text" id="editCompanyLogo" name="editCompanyLogo"><br>
-                <label for="editValueMin">Valor Mínimo:</label><br>
-                <input type="number" id="editValueMin" name="editValueMin"><br>
-                <label for="editValueMax">Valor Máximo:</label><br>
-                <input type="number" id="editValueMax" name="editValueMax"><br><br>
-                <input type="submit" value="Salvar">
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Editar Oportunidade</h2>
+        <form id="editarOportunidadeForm">
+          <input type="hidden" id="editId" />
+          <label for="editTitle">Título:</label><br />
+          <input type="text" id="editTitle" name="editTitle" /><br />
+          <label for="editTags">Tags (separadas por vírgula):</label><br />
+          <input type="text" id="editTags" name="editTags" /><br />
+          <label for="editCompany">Empresa:</label><br />
+          <input type="text" id="editCompany" name="editCompany" /><br />
+          <label for="editCompanyLogo">Logo da Empresa (URL):</label><br />
+          <input
+            type="text"
+            id="editCompanyLogo"
+            name="editCompanyLogo"
+          /><br />
+          <label for="editValueMin">Valor Mínimo:</label><br />
+          <input type="number" id="editValueMin" name="editValueMin" /><br />
+          <label for="editValueMax">Valor Máximo:</label><br />
+          <input
+            type="number"
+            id="editValueMax"
+            name="editValueMax"
+          /><br /><br />
+          <input type="submit" value="Salvar" />
+        </form>
+      </div>
     </div>
 
     <!-- Modal Ver Candidatos -->
     <div id="verCandidatosModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Candidatos</h2>
-            <div id="candidatosContainer"></div>
-        </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Candidatos</h2>
+        <div id="candidatosContainer"></div>
+      </div>
     </div>
 
-    <script src="./assets/js/ofertas.js"></script>
-</body>
-
+    <script src="../principal.js/ofertas.js"></script>
+  </body>
 </html>

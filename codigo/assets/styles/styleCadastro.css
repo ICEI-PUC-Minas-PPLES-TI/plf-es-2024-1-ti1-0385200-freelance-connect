@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+.body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* background-color: #CDE8E5; */
+  font-family: "Poppins", sans-serif;
+}
+
+.principal {
+  position: relative; /* Altera de fixed para relative */
+  /* width: 95%; */
+  /* max-width: 1600px; */
+  /* Espaçamento no topo e bottom e centraliza na tela */
+  /* margin: 20px auto;  */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.main-content {
+  max-width: 100%; /* Garante que o conteúdo interno não ultrapasse a largura máxima da seção */
+}
+
+.input-lg {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.custom-button {
+  background-color: #cde8e5;
+  color: black;
+  border: 1px solid #cde8e5;
+  font-size: 1rem;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.body a {
+  text-decoration: none;
+}
+
+.main-content {
+  max-width: 100%; /* Garante que o conteúdo interno não ultrapasse a largura máxima da seção */
+}
+.input-lg {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.custom-button {
+  background-color: #cde8e5;
+  color: black;
+  border: 1px solid #cde8e5;
+  font-size: 1rem;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.body a {
+  text-decoration: none;
+}

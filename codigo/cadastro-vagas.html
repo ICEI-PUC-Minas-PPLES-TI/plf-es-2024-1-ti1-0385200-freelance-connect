@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de ofertas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </head>
+  <body class="flex items-start w-full min-h-screen">
+    <aside
+      class="flex flex-col w-72 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l"
+    >
+      <a href="./dashboard.html" class="mx-auto">
+        <img
+          class="w-auto h-6 sm:h-7"
+          src="./assets/imgs/logo-freela-connect.png"
+          alt=""
+        />
+      </a>
+
+      <div class="flex flex-col items-center mt-6 -mx-2">
+        <img
+          class="object-cover w-24 h-24 mx-2 rounded-full"
+          src=""
+          id="user-avatar"
+          alt="avatar"
+        />
+        <h4 class="mx-2 mt-2 font-medium text-gray-800" id="userName"></h4>
+        <p
+          class="mx-2 mt-1 text-sm font-medium text-gray-600"
+          id="userEmail"
+        ></p>
+      </div>
+
+      <div class="flex flex-col justify-between flex-1 mt-6">
+        <nav class="flex flex-col space-y-2">
+          <a
+            class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-lg"
+            href="./dashboard.html"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Tela inicial</span>
+          </a>
+
+          <a
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            href="./ofertas.html"
+            id="ofertas-link"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Ofertas</span>
+          </a>
+
+          <a
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            href="./minhas-candidaturas.html"
+            id="minhas-candidaturas"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Minhas Candidaturas</span>
+          </a>
+
+          <a
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            href="./cadastro-vagas.html"
+            id="cadastro-ofertas"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Cadastro de ofertas</span>
+          </a>
+
+          <a
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            href="./ofertas-empresa.html"
+            id="lista-minhas-ofertas"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Minhas Ofertas</span>
+          </a>
+
+          <a
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            href="./candidatos.html"
+            id="cadidatos"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Candidatos</span>
+          </a>
+
+          <a
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            href="./perfil.html"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Perfil</span>
+          </a>
+        </nav>
+      </div>
+
+      <button
+        class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+        id="btnLogout"
+        onclick="logoutUser()"
+      >
+        Logout
+      </button>
+    </aside>
+    <div class="w-full">
+      <main class="p-6 w-full">
+        <h1 class="text-3xl font-semibold">Cadastro de Ofertas</h1>
+
+        <form action="" method="post" id="formOferta" class="mt-4 space-y-2">
+          <div>
+            <label for="title" class="block text-sm text-gray-800"
+              >Titulo</label
+            >
+            <input
+              type="text"
+              id="title"
+              placeholder="Titulo..."
+              class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            />
+          </div>
+
+          <div>
+            <label for="description" class="block text-sm text-gray-500"
+              >Descrição</label
+            >
+
+            <textarea
+              id="description"
+              placeholder="descrição..."
+              class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-4 h-32 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="salarioMinimo" class="block text-sm text-gray-800"
+              >Salário Mínimo</label
+            >
+            <input
+              type="number"
+              id="salarioMinimo"
+              placeholder="Sálario minimo..."
+              class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            />
+          </div>
+
+          <div>
+            <label for="salarioMaximo" class="block text-sm text-gray-800"
+              >Sálario Maximo</label
+            >
+            <input
+              type="number"
+              id="salarioMaximo"
+              placeholder="Salário Máximo..."
+              class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            />
+          </div>
+
+          <div>
+            <label for="lock" class="block text-sm text-gray-800"
+              >Localização</label
+            >
+            <input
+              type="text"
+              id="lock"
+              placeholder="Localização..."
+              class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            />
+          </div>
+          <button
+            class="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50 bg-blue-600"
+            type="submit"
+          >
+            Cadastrar Oferta
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <script src="./assets/js/ofertas.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+  </body>
+</html>

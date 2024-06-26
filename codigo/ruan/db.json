@@ -1,0 +1,132 @@
+{
+  "userProfile": [
+    {
+      "id": "2",
+      "userId": "f307",
+      "profile": {
+        "name": "Pedro",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      },
+      "services": [
+        {
+          "id": 1,
+          "title": "Web Development",
+          "description": "Desenvolvimento de sites e aplicações web."
+        },
+        {
+          "id": 2,
+          "title": "Design",
+          "description": "Design gráfico e UI/UX."
+        }
+      ],
+      "especialidades": [
+        {
+          "id": 1,
+          "description": "Tecnico em computadores",
+          "contratacoes": "Trabalhou em Empresa A por 2 anos"
+        },
+        {
+          "id": 2,
+          "description": "Tecnico Analise de sistemas",
+          "contratacoes": "Trabalhou em Empresa B por 3 anos"
+        },
+        {
+          "id": 3,
+          "description": "Tecnico Desenvolvimento de sistemas",
+          "contratacoes": "Trabalhou em Empresa C por 4 anos"
+        }
+      ],
+      "portfolio": [
+        {
+          "id": 1,
+          "title": "Projeto1",
+          "image": "images/portifolio.png"
+        },
+        {
+          "id": 2,
+          "title": "Projeto 2",
+          "image": "images/portifolio-2.png"
+        }
+      ],
+      "socials": {
+        "linkGithub": "https://github.com/",
+        "linkLinkedin": "https://www.linkedin.com/",
+        "linkTwitter": "https://twitter.com/",
+        "linkYotube": "https://www.youtube.com/"
+      }
+    }
+  ],
+  "vagas": [
+    {
+      "id": "307c",
+      "title": "Vaga de desenvolvedor de software",
+      "description": "Vaga para desenvolvedor de software para pessoas novatas",
+      "company": "GitLab",
+      "localization": "Belo Horizonte- MG",
+      "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdEThhfjvM6AJQ6YgwKIZtdvbxW677sOBFdA&s",
+      "valueMin": "1899.97",
+      "valueMax": "2599.0",
+      "empresaId": "f307"
+    },
+    {
+      "id": "307d",
+      "title": "Vaga de desenvolvedor de software",
+      "description": "Vaga para desenvolvedor de software para pessoas novatas",
+      "company": "GitLab",
+      "localization": "Belo Horizonte- MG",
+      "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdEThhfjvM6AJQ6YgwKIZtdvbxW677sOBFdA&s",
+      "valueMin": "1899.97",
+      "valueMax": "2599.0",
+      "empresaId": "f307"
+    }
+  ],
+  "users": [
+    {
+      "name": "Ruan",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdEThhfjvM6AJQ6YgwKIZtdvbxW677sOBFdA&s",
+      "email": "ruan@ruan.com",
+      "password": "123456",
+      "tel": "31999855646",
+      "cnpj": "",
+      "type": "freelancer",
+      "id": "99c7"
+    },
+    {
+      "id": "f307",
+      "name": "github",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdEThhfjvM6AJQ6YgwKIZtdvbxW677sOBFdA&s",
+      "tel": "31999855646",
+      "email": "ruanvictormr@gmail.com",
+      "cnpj": "8798846461",
+      "password": "123456",
+      "type": "empresa"
+    },
+    {
+      "id": "ced6",
+      "name": "pedro castro ",
+      "tel": "31982739187293",
+      "email": "ruanvictorfake22@gmail.com",
+      "cnpj": "",
+      "password": "123456",
+      "type": "freelancer"
+    },
+    {
+      "id": "e3c2",
+      "name": "",
+      "tel": "",
+      "email": "",
+      "cnpj": "",
+      "password": "",
+      "type": "empresa",
+      "logo": "https://w7.pngwing.com/pngs/771/978/png-transparent-tailwind-css-css-framework-customizable-low-level-tailwind-logo-3d-icon.png"
+    }
+  ],
+  "userVaga": [
+    {
+      "id": "7d75",
+      "userId": "99c7",
+      "vagaId": "307d",
+      "status": "pendente"
+    }
+  ]
+}
