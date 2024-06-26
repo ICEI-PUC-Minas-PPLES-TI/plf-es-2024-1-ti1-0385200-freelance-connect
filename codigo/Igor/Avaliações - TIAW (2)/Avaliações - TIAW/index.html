@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Estabelecimento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="botaoInicio">Avaliar Estabelecimento</button>
+
+    <div id="avalia" class="modal">
+        <div class="modal-content">
+            <span class="fecha">&times;</span>
+            <h2>Avalie o Estabelecimento</h2>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <textarea id="comentario" rows="4" placeholder="Deixe seu comentário aqui..."></textarea>
+            <div class="button-container">
+                <button id="envia">Enviar Avaliação</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
