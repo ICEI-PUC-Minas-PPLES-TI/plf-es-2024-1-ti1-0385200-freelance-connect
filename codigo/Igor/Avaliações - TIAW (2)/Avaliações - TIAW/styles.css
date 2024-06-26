@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  max-width: 700px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  position: relative;
+}
+
+.fecha {
+  color: #aaa;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.fecha:hover,
+.fecha:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.star {
+  font-size: 2.8em;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.star:hover,
+.star.selected,
+.star:hover ~ .star {
+  color: #ffcc00;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#envia {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#envia:hover {
+  background-color: #0056b3;
+}
