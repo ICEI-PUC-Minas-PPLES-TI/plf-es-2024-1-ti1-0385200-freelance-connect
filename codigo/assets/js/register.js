@@ -1,5 +1,5 @@
-const apiFreelancerUrl = "http://localhost:3000/users"; // Substitua pela URL da API de Freelancer
-const apiEmpresaUrl = "http://localhost:3000/users";
+const apiFreelancerUrl = "https://connect-tech-back.onrender.com/users"; // Substitua pela URL da API de Freelancer
+const apiEmpresaUrl = "https://connect-tech-back.onrender.com/users";
 
 function displayMessage(mensagem) {
   const msg = document.getElementById("msg");

@@ -18,11 +18,11 @@ async function removerCandidatura(idVaga) {
   const userId = JSON.parse(sessionStorage.getItem("user")).id;
 
   const getUserVaga = await fetch(
-    `http://localhost:3000/userVaga/?userId=${userId}&vagaId=${idVaga}`
+    `https://connect-tech-back.onrender.com/userVaga/?userId=${userId}&vagaId=${idVaga}`
   ).then((response) => response.json());
 
   const res = await fetch(
-    `http://localhost:3000/userVaga/${getUserVaga[0].id}`,
+    `https://connect-tech-back.onrender.com/userVaga/${getUserVaga[0].id}`,
     {
       method: "DELETE",
       headers: {
@@ -40,7 +40,7 @@ async function removerCandidatura(idVaga) {
 async function candidatar(vagaId) {
   const userId = JSON.parse(sessionStorage.getItem("user")).id;
 
-  const res = await fetch(`http://localhost:3000/userVaga`, {
+  const res = await fetch(`https://connect-tech-back.onrender.com/userVaga`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -58,14 +58,18 @@ async function candidatar(vagaId) {
   }
 }
 async function loadVagas() {
-  let url = "http://localhost:3000/vagas";
+  let url = "https://connect-tech-back.onrender.com/vagas";
 
   const userId = JSON.parse(sessionStorage.getItem("user")).id;
 
   const [data, companies, userVagas] = await Promise.all([
     fetch(url).then((response) => response.json()),
-    fetch("http://localhost:3000/users").then((response) => response.json()),
-    fetch("http://localhost:3000/userVaga").then((response) => response.json()),
+    fetch("https://connect-tech-back.onrender.com/users").then((response) =>
+      response.json()
+    ),
+    fetch("https://connect-tech-back.onrender.com/userVaga").then((response) =>
+      response.json()
+    ),
   ]);
 
   const companyMap = companies.reduce((map, company) => {

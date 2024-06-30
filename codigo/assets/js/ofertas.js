@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000/vagas";
+const apiUrl = "https://connect-tech-back.onrender.com/vagas";
 
 const formOferta = document.getElementById("formOferta");
 

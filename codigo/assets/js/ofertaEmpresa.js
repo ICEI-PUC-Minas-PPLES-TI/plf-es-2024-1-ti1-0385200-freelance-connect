@@ -86,7 +86,7 @@ async function loadVagas() {
   const userID = JSON.parse(sessionStorage.getItem("user")).id;
 
   const data = await fetch(
-    `http://localhost:3000/vagas/?empresaId=${userID}`
+    `https://connect-tech-back.onrender.com/vagas/?empresaId=${userID}`
   ).then((response) => response.json());
 
   if (!data) {

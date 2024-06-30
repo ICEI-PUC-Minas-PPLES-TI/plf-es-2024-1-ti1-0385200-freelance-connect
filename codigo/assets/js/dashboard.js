@@ -21,8 +21,8 @@ const vagasContainer = document.querySelector("#vagas");
 const vagasCandidatadas = document.querySelector("#vagasCandidatadas");
 
 async function loadVagas() {
-  const data = await fetch("http://localhost:3000/vagas").then((response) =>
-    response.json()
+  const data = await fetch("https://connect-tech-back.onrender.com/vagas").then(
+    (response) => response.json()
   );
 
   vagasContainer.innerHTML = "";
@@ -86,8 +86,8 @@ if (userRole === "freelancer") {
 }
 
 async function loadVagasCandidatas(id) {
-  const data = await fetch("http://localhost:3000/vagas").then((response) =>
-    response.json()
+  const data = await fetch("https://connect-tech-back.onrender.com/vagas").then(
+    (response) => response.json()
   );
 
   vagasCandidatadas.innerHTML = "";

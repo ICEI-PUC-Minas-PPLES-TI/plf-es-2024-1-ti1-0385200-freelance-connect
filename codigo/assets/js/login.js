@@ -1,4 +1,4 @@
-var API_URL = "http://localhost:3000";
+var API_URL = "https://connect-tech-back.onrender.com";
 
 function generateUUID() {
   // Public Domain/MIT

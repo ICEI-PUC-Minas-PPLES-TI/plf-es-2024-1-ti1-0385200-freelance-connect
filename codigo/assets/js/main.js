@@ -4,13 +4,13 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 async function loadVagasTelaInicial() {
-  const data = await fetch("http://localhost:3000/vagas?limit=5").then(
-    (response) => response.json()
-  );
+  const data = await fetch(
+    "https://connect-tech-back.onrender.com/vagas?limit=5"
+  ).then((response) => response.json());
 
-  const companies = await fetch("http://localhost:3000/users").then(
-    (response) => response.json()
-  );
+  const companies = await fetch(
+    "https://connect-tech-back.onrender.com/users"
+  ).then((response) => response.json());
 
   const empresaDados = data
     .map((vaga) => {
