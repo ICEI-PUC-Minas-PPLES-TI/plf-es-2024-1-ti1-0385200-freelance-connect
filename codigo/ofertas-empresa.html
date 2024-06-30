@@ -37,7 +37,7 @@
       <div class="flex flex-col justify-between flex-1 mt-6">
         <nav class="flex flex-col space-y-2">
           <a
-            class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-lg"
+            class="flex items-center px-4 py-2 text-gray-700 rounded-lg"
             href="./dashboard.html"
           >
             <svg
@@ -135,7 +135,7 @@
           </a>
 
           <a
-            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors bg-gray-100 duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
             href="./ofertas-empresa.html"
             id="lista-minhas-ofertas"
           >
@@ -229,11 +229,14 @@
 
           <div
             class="bg-white p-5 rounded-lg hidden border w-96"
-            id="form-edita-vaga"
+            id="div-edita-vaga"
           >
-            <h3 class="text-2xl">Editar Vaga</h3>
+            <div class="flex justify-between items-center">
+              <h3 class="text-2xl">Editar Vaga</h3>
+              <p id="nome-vaga-vizualiza"></p>
+            </div>
 
-            <form method="post" class="space-y-2">
+            <form method="post" class="space-y-2" id="form-edita-vaga">
               <div>
                 <label for="username" class="block text-sm text-gray-500"
                   >Titulo</label
@@ -241,6 +244,7 @@
                 <input
                   type="text"
                   placeholder="John Doe"
+                  id="vaga-titulo"
                   class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 w-full"
                 />
               </div>
@@ -251,6 +255,7 @@
 
                 <textarea
                   placeholder="Descrição..."
+                  id="vaga-desc"
                   class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-4 h-32 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
                 ></textarea>
               </div>
@@ -260,6 +265,7 @@
                 >
                 <input
                   type="text"
+                  id="vaga-lock"
                   placeholder="Nova Localização..."
                   class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 w-full"
                 />
@@ -270,6 +276,7 @@
                 >
                 <input
                   type="number"
+                  id="vaga-min"
                   placeholder="Valor Minimo..."
                   class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 w-full"
                 />
@@ -280,11 +287,15 @@
                 >
                 <input
                   type="number"
+                  id="vaga-max"
                   placeholder="Valor Maximo..."
                   class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 w-full"
                 />
               </div>
+              <input type="hidden" id="idVaga" />
               <button
+                id="btn-submit"
+                type="submit"
                 class="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50 bg-blue-600"
               >
                 Editar

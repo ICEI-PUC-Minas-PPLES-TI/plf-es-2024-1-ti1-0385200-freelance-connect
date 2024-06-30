@@ -62,7 +62,7 @@ function validarCadastro() {
   createContato(apiUrl, contato, () => {
     document.getElementById("formCadastro").reset();
     alert("Usuario Cadastrado com sucesso!");
-    window.location.href = "./login.html";
+    return (window.location.href = "./login.html");
   });
 }
 

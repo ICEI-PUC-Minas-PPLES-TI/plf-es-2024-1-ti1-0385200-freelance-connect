@@ -1,27 +1,19 @@
 function formatarTelefone(telefone) {
-  // Remove todos os caracteres que não são números
   telefone = telefone.replace(/\D/g, "");
 
-  // Se o número começar com '55', removemos esse prefixo
   if (telefone.length > 11 && telefone.startsWith("55")) {
     telefone = telefone.substring(2);
   }
 
-  // Verifica o tamanho do telefone para determinar o formato correto
   if (telefone.length === 11) {
-    // Formato com DDD e número de celular (11 dígitos)
     return telefone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
   } else if (telefone.length === 10) {
-    // Formato com DDD e número fixo (10 dígitos)
     return telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, "($1) $2-$3");
   } else if (telefone.length === 9) {
-    // Formato sem DDD e número de celular (9 dígitos)
     return telefone.replace(/^(\d{5})(\d{4})$/, "$1-$2");
   } else if (telefone.length === 8) {
-    // Formato sem DDD e número fixo (8 dígitos)
     return telefone.replace(/^(\d{4})(\d{4})$/, "$1-$2");
   } else {
-    // Se não for nenhum dos formatos esperados, retorna o número original
     return telefone;
   }
 }
@@ -47,7 +39,7 @@ const userImageElement = document.getElementById("user-avatar");
 const userImageElement2 = document.getElementById("user-avatar2");
 const userCNPJElement = document.getElementById("user-cnpj");
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const userData = JSON.parse(sessionStorage.getItem("user"));
 
   if (!userData) {
@@ -109,6 +101,8 @@ async function editUserData(ev) {
   const inputConfirmarSenha =
     document.getElementById("input-confirmar-senha")?.value || "";
 
+  const Body = {};
+
   if (inputSenha && inputConfirmarSenha) {
     if (inputSenha !== inputConfirmarSenha) {
       alert("As senhas não são iguais!");
@@ -117,8 +111,6 @@ async function editUserData(ev) {
       Body.password = inputSenha;
     }
   }
-
-  const Body = {};
 
   if (inputNome) {
     Body.name = inputNome;
@@ -145,7 +137,6 @@ async function editUserData(ev) {
   }).then((response) => response.json());
 
   if (res) {
-    console.log(res);
     alert("Usuário editado com sucesso!");
     sessionStorage.removeItem("user");
     window.location.href = "login.html";
@@ -256,9 +247,6 @@ async function editUserProfile(ev) {
     delete Body.socials.linkYoutube;
   }
 
-  console.log("Body:", Body);
-  return;
-
   const res = await fetch(
     `${API_URL}/userProfile/${actualProfileInfos[0].id}`,
     {
@@ -309,11 +297,11 @@ async function getPerfilInfo(id) {
     }
   });
 
-  console.log("res", res);
+  console.log(res.length);
 
-  if (res.length < 0) {
+  if (res.length == 0) {
     descricao.textContent = "Você não possui perfil";
-    descricao.appendChild(buttonCriarPerfil);
+    descricao.className = "text-center";
     descricao.appendChild(buttonCriarPerfil);
     return;
   }

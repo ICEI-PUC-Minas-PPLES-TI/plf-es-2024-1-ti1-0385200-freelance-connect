@@ -1,5 +1,5 @@
 const cardsContainer = document.getElementById("cards");
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   loadVagasTelaInicial();
 });
 

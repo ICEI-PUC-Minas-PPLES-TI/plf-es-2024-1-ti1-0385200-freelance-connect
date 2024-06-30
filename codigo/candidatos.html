@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ofertas</title>
+    <title>Tela Inicial</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="./assets/js/sidebar.js"></script>
-    <script>
+    <script src="./assets/js/login.js"></script>
+    <!-- email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
       (function () {
-        emailjs.init("DvwsxyozWIbthW-LS");
+        emailjs.init({
+          publicKey: "DvwsxyozWIbthW-LS",
+        });
       })();
     </script>
   </head>
@@ -64,7 +70,7 @@
           </a>
 
           <a
-            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700 bg-gray-100"
+            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
             href="./ofertas.html"
             id="ofertas-link"
           >
@@ -163,7 +169,7 @@
           </a>
 
           <a
-            class="flex items-center px-4 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
+            class="flex items-center px-4 py-2 text-gray-600 bg-gray-100 transition-colors duration-300 transform rounded-lg hover:bg-gray-100 hover:text-gray-700"
             href="./candidatos.html"
             id="cadidatos"
           >
@@ -227,79 +233,22 @@
 
     <div class="w-full bg-gray-100">
       <main class="p-10 w-full overflow-y-scroll h-screen">
-        <h1 class="text-2xl font-bold">Ofertas</h1>
-        <div class="flex items-start gap-10">
-          <section class="mt-10 bg-white p-5 rounded-lg min-w-[350px]">
-            <h4 class="text-2xl">Filtros</h4>
-            <form
-              onsubmit=""
-              id="form-filtro"
-              method="post"
-              class="flex flex-col gap-5"
-            >
-              <div>
-                <label for="username" class="block text-sm text-gray-500"
-                  >Filtrar por nome</label
-                >
-                <input
-                  placeholder="Filtrar por nome"
-                  id="input-nome"
-                  class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 w-full"
-                />
-              </div>
-              <div>
-                <label for="username" class="block text-sm text-gray-500"
-                  >Filtrar por descricao</label
-                >
-                <input
-                  placeholder="Filtrar por descricao"
-                  id="input-desc"
-                  class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 w-full"
-                />
-              </div>
-              <div>
-                <label for="username" class="block text-sm text-gray-500"
-                  >Filtrar por localização</label
-                >
-                <input
-                  placeholder="Filtrar por localização"
-                  id="input-loc"
-                  class="block mt-2 w-full placeholder-gray-400/70 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 w-full"
-                />
-              </div>
-              <button
-                class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 mt-3"
-                type="submit"
-              >
-                Filtrar
-              </button>
-            </form>
-          </section>
+        <h1 class="text-2xl font-bold">Candidatos Por Vaga</h1>
 
-          <section class="flex items-start w-full mt-10">
-            <section class="flex items-start flex-col w-full">
-              <h3 class="text-xl font-semibold">Ofertas</h3>
-              <div class="mt-5 flex flex-col gap-5 w-ful" id="vagas"></div>
-            </section>
+        <section class="flex gap-20 items-start w-full mt-10">
+          <section class="flex items-start flex-col w-full">
+            <h3 class="text-xl">Minhas Vagas</h3>
+            <div class="mt-5 flex flex-col gap-5" id="vagas"></div>
           </section>
-        </div>
+          <section class="flex items-start flex-col w-full">
+            <h3 class="text-xl">Cadidatos</h3>
+            <div class="mt-5 flex flex-col gap-5 w-full" id="candidatos"></div>
+          </section>
+        </section>
       </main>
     </div>
-    <script src="./assets/js/login.js"></script>
-    <script src="./assets/js/oferta.js"></script>
-    <script>
-      const form = document.getElementById("form-filtro");
-
-      function filtraDados(ev) {
-        ev.preventDefault();
-        const nome = document.getElementById("input-nome").value;
-        const desc = document.getElementById("input-desc").value;
-        const loc = document.getElementById("input-loc").value;
-
-        loadVagas(nome, desc, loc);
-      }
-
-      form.addEventListener("submit", filtraDados);
-    </script>
+    <!-- <script src="./assets/js/dashboard.js"></script> -->
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/candidatos.js"></script>
   </body>
 </html>

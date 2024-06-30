@@ -37,7 +37,6 @@ async function loginUser(email, password) {
   const data = await res.json();
 
   for (let i = 0; i < data.length; i++) {
-    console.log(data[i]);
     if (email === data[i].email && password === data[i].password) {
       sessionStorage.setItem("user", JSON.stringify(data[i]));
 
@@ -61,7 +60,7 @@ function verificaLogin() {
   }
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   if (
     !window.location.pathname.includes("login.html") &&
     !window.location.pathname.includes("register.html") &&

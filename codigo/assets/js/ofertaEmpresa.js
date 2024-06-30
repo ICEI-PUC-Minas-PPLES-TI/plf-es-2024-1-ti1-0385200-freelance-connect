@@ -1,7 +1,7 @@
 const container = document.getElementById("ofertas");
-const formEdit = document.getElementById("form-edita-vaga");
+const formEdit = document.getElementById("div-edita-vaga");
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   loadVagas();
 });
 
@@ -15,7 +15,72 @@ async function deleteVagas(id) {
   }
 }
 
-async function EditaVaga(id, nomeVaga) {}
+async function EditaVaga(id) {
+  document.getElementById("idVaga").value = id;
+  document.getElementById("nome-vaga-vizualiza").innerText = id;
+}
+
+async function handleEditaVaga(ev) {
+  ev.preventDefault();
+  const id = document.getElementById("idVaga").value;
+  console.log(id);
+  const vagaTitulo = document.getElementById("vaga-titulo").value || null;
+  const vagaDesc = document.getElementById("vaga-desc").value || null;
+  const vagaLock = document.getElementById("vaga-lock").value || null;
+  const vagaVlrMin = document.getElementById("vaga-min").value || null;
+  const vagaVlrMax = document.getElementById("vaga-max").value || null;
+
+  const Body = {};
+
+  if (vagaTitulo) {
+    Body.title = vagaTitulo;
+  }
+
+  if (vagaDesc) {
+    Body.description = vagaDesc;
+  }
+
+  if (vagaLock) {
+    Body.localization = vagaLock;
+  }
+
+  if (vagaVlrMin) {
+    Body.valueMin = vagaVlrMin;
+  }
+
+  if (vagaVlrMax) {
+    Body.valueMax = vagaVlrMax;
+  }
+
+  const currentVaga = await fetch(`${API_URL}/vagas/${id}`).then((response) =>
+    response.json()
+  );
+
+  const updatedVaga = {
+    ...currentVaga,
+    title: vagaTitulo || currentVaga.title,
+    description: vagaDesc || currentVaga.description,
+    localization: vagaLock || currentVaga.localization,
+    valueMin: vagaVlrMin || currentVaga.valueMin,
+    valueMax: vagaVlrMax || currentVaga.valueMax,
+  };
+
+  const res = await fetch(`${API_URL}/vagas/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updatedVaga),
+  }).then((response) => response.json());
+
+  if (res) {
+    alert("Vaga editada com sucesso!");
+  }
+}
+
+document
+  .getElementById("form-edita-vaga")
+  .addEventListener("submit", handleEditaVaga);
 
 async function loadVagas() {
   const userID = JSON.parse(sessionStorage.getItem("user")).id;

@@ -36,7 +36,6 @@ formOferta.addEventListener("submit", async function (event) {
     empresaId: empresaData.id,
   };
 
-  console.log(body);
   // return;
   try {
     const res = await fetch(apiUrl, {

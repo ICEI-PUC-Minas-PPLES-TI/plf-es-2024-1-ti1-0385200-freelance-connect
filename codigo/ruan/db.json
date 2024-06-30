@@ -54,11 +54,25 @@
         "linkTwitter": "https://twitter.com/",
         "linkYotube": "https://www.youtube.com/"
       }
+    },
+    {
+      "id": "788e",
+      "userId": "7f87",
+      "profile": {
+        "description": "teste",
+        "services": []
+      },
+      "especialidades": [],
+      "socials": {}
+    },
+    {
+      "id": "99c2",
+      "userId": "ced6"
     }
   ],
   "vagas": [
     {
-      "id": "307c",
+      "id": "307d",
       "title": "Vaga de desenvolvedor de software",
       "description": "Vaga para desenvolvedor de software para pessoas novatas",
       "company": "GitLab",
@@ -69,8 +83,8 @@
       "empresaId": "f307"
     },
     {
-      "id": "307d",
-      "title": "Vaga de desenvolvedor de software",
+      "id": "308d",
+      "title": "Vaga de desenvolvedor de software 2",
       "description": "Vaga para desenvolvedor de software para pessoas novatas",
       "company": "GitLab",
       "localization": "Belo Horizonte- MG",
@@ -108,24 +122,39 @@
       "email": "ruanvictorfake22@gmail.com",
       "cnpj": "",
       "password": "123456",
+      "type": "freelancer",
+      "logo": "https://ui-avatars.com/api/?name=Connect+Tech"
+    },
+    {
+      "id": "7f87",
+      "name": "teste",
+      "tel": "teste",
+      "email": "teste@mail.com",
+      "cnpj": "",
+      "password": "123456",
       "type": "freelancer"
     },
     {
-      "id": "e3c2",
-      "name": "",
-      "tel": "",
-      "email": "",
+      "id": "ac0d",
+      "name": "ruan v fake",
+      "tel": "319820938109381",
+      "email": "ruanvictorfake22@gmail.com",
       "cnpj": "",
-      "password": "",
-      "type": "empresa",
-      "logo": "https://w7.pngwing.com/pngs/771/978/png-transparent-tailwind-css-css-framework-customizable-low-level-tailwind-logo-3d-icon.png"
+      "password": "123456",
+      "type": "freelancer"
     }
   ],
   "userVaga": [
     {
-      "id": "7d75",
+      "id": "c4e0",
       "userId": "99c7",
       "vagaId": "307d",
+      "status": "pendente"
+    },
+    {
+      "id": "fb95",
+      "userId": "ced6",
+      "vagaId": "308d",
       "status": "pendente"
     }
   ]
