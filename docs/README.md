@@ -44,6 +44,28 @@ Indivíduos, pequenas empresas ou organizações com até 50 colaboradores, que 
 
 1.7 Artefatos de Design Thinking
 
+1.7.1	Matriz de Alinhamento CSD
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/d09a27a3-73a7-44e6-aa2f-03fbed919537)
+
+ 
+1.7.2	Mapa de Stakeholders
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/03bae108-d66e-48f6-ae42-b8d98e37607d)
+
+ 
+1.7.3	Entrevista Qualitativa
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/d2711269-8a0a-483a-800e-faf0bf1689ce)
+
+ 
+1.7.4	Mural de Possibilidades
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/ac1c3cce-dec1-491e-ab9e-b6118719af9d)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/88176507-76be-4ee0-9121-9e7400d15130)
+
+
 2	PROJETO DA SOLUÇÃO
 
 2.1	Personas
@@ -114,9 +136,19 @@ Como usuário, desejo poder criar um perfil na plataforma, fornecendo informaç�
 
 2.4	Projeto de Interface
 
-2.4.1 Wireframes
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/8752b1e9-57d1-4eff-8ba0-c148d0bdc84f)
 
-2.4.2 Protótipos
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/cef7d804-30a6-4ce1-8d8c-4c6f2d2cfa04)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/da80b9cc-1908-4da3-a567-dc4afa931e0a)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/e18901c8-1e2a-4c35-9b33-aa3d4801ffba)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/9c2c76e4-06ef-4981-ab67-35904ec7d288)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/ead8429c-1da9-4617-af5c-a84a1868617c)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0385200-freelance-connect/assets/164200272/73260298-2260-4a0c-9c21-243d29ee2e0a)
 
 2.5	Tecnologias
 
@@ -124,17 +156,78 @@ Para a realização do software, utilizamos diversas ferramentas tecnológicas e
 
 Para o gerenciamento do código-fonte, utilizamos o GitHub, onde hospedamos nosso repositório para que todos os membros do grupo pudessem colaborar e ter acesso ao código criado por cada um. A plataforma GitHub Projects foi essencial para organizar as funcionalidades atribuídas a cada integrante, além de manter um controle claro do que estava pendente, em andamento e concluído durante todo o processo de desenvolvimento. Essas tecnologias foram fundamentais para o sucesso do projeto, garantindo uma colaboração eficiente, organização estruturada e um desenvolvimento contínuo e integrado.
 
-3	METODOLOGIA DE TRABALHO
+3  METODOLOGIA DO TRABALHO
 
-3.1	Processo
+3.1	Processo e Atribuições
 
-3.2	Atribuições
+O grupo utilizou do Scrum para a organização inicial do projeto. Os requisitos foram levantados por reuniões presenciais e organizados em um backlog na ferramenta de trabalho World. 
+Em cada Sprint, cada membro ficou responsável para construir um ou mais requisitos de sua escolha até a entrega final do projeto.
 
-3.3	Ferramentas
+3.2	Ferramentas
+
+•	Visual Studio Code: para construção do projeto.
+
+•	World e Trelo: Para organização dos requisitos em cada Sprint.
+
+•	Whatsapp e Discord: para reuniões e acordos necessários.
 
 4	SOLUÇÃO IMPLEMENTADA
 
 4.1	Funcionalidades do software
+
+•	Registro e Gestão de Usuários.
+
+- Registro de Usuários: Formulário de inscrição para empregadores e freelancer.
+  
+- Autenticação: Login seguro.
+  
+- Perfis de Usuários: Criação e edição de perfis com informações pessoais, habilidades, experiência e portfólio.
+  
+•	Gestão de Perfis.
+
+- Perfil do Freelancer:
+  
+  - Informações pessoais e profissionais.
+    
+  - Listagem de habilidades.
+    
+  - Portfólio de trabalhos anteriores.
+    
+  - Disponibilidade e tarifas.
+    
+- Perfil do Empregador:
+  
+  - Informações da empresa.
+    
+  - Histórico de projetos e avaliações de freelancer.
+    
+  - Preferências de contratação.
+    
+  - Vagas.
+    
+•	Publicação e Gestão de Ofertas de Trabalho.
+
+- Criação de Ofertas: Formulários para que os empregadores publiquem novas vagas.
+  
+- Categorias: Organização dos trabalhos por categorias, habilidades requeridas e outros filtros.
+  
+- Gestão de Ofertas: Edição e exclusão de ofertas publicadas.
+  
+•	Busca e Navegação.
+
+- Motor de Busca: Busca avançada por palavras-chave, categorias, habilidades, tarifas, etc.
+  
+•	Comunicação e Colaboração.
+
+- Mensagens Internas: Sistema de mensagens entre empregadores e freelancer por email.
+ 
+•	Processo de Contratação.
+
+- Avaliação e Seleção: Ferramentas para que os empregadores revisem propostas, perfis e selecionem candidatos.
+  
+•	Avaliações e Feedback.
+
+- Sistema de Avaliações: Permitir que freelancer avaliem e deixem feedbacks após completar um projeto com a empresa.
 
 5	REFERÊNCIAS BIBLIOGRÁFICAS
 BLOG, Hotmart. O que é persona no marketing? Saiba mais e descubra como fazer a sua. Disponível em: https://hotmart.com/pt-br/blog/o-que-e-persona. Acesso em: 09 abr. 2024. 
