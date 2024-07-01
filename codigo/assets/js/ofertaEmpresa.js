@@ -12,6 +12,7 @@ async function deleteVagas(id) {
 
   if (res) {
     alert("Vaga deletada com sucesso!");
+    loadVagas();
   }
 }
 
@@ -75,6 +76,7 @@ async function handleEditaVaga(ev) {
 
   if (res) {
     alert("Vaga editada com sucesso!");
+    loadVagas();
   }
 }
 

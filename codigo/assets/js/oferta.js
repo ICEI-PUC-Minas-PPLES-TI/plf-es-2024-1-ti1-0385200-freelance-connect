@@ -11,6 +11,7 @@ async function deleteVagas(id) {
 
   if (res) {
     alert(res);
+    loadVagas();
   }
 }
 

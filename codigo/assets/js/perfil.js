@@ -88,8 +88,6 @@ const dltBtn = document.getElementById("delete-btn");
 
 dltBtn.addEventListener("click", deleteUser);
 
-async function editUserProfile() {}
-
 async function editUserData(ev) {
   ev.preventDefault();
   const userData = JSON.parse(sessionStorage.getItem("user"));
