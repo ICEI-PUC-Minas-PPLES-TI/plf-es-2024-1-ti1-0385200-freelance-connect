@@ -23,4 +23,4 @@ Rafael Figueiredo de Souza Ribeiro
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Na pasta codigo, o arquivo index.html será o arquivo principal (home page) a ser carregado.
